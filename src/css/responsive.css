@@ -1,0 +1,32 @@
+@media (max-width: 767px){
+    .container{
+        flex-direction: column;
+    }
+    
+}
+@media (max-width: 380px){
+    
+    .container{
+        max-width: 380px;
+    }
+    .texts{
+        max-width: 270px;
+    }
+    .form{
+        align-items: center;
+        max-width: 270px;
+    }
+    .form .input{
+        min-width: 240px;
+    }
+    .form .message{
+        max-width: 240px;
+    }
+    .btn-submit{
+        min-width: 240px;
+    }
+    .aviso{
+        align-self: flex-start;
+    }
+    
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="João Paulo da Silva" />
+        <title>Quest HTML - CSS - JS Intermediário</title>
+
+        <link rel="stylesheet" href="./src/css/reset.css" />
+        <link rel="stylesheet" href="./src/css/style.css" />
+        <link rel="stylesheet" href="./src/css/responsive.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main class="container">
+            <div class="texts">
+                <h2 class="call">
+                    Ficou com dúvida?<br />Nos mande uma mensagem!
+                </h2>
+                <p class="paragraph">
+                    caso tenha ficado com qualquer dúvida basta nos mandar uma
+                    mensagem e entraremos em contato em menos de 24h.
+                </p>
+            </div>
+            <form class="form" id="form" method="post">
+                <div>
+                    <input
+                        type="text"
+                        placeholder="Nome completo *"
+                        class="input"
+                        name="name"                    
+                    />
+                    <span class="campo-obrigatorio"></span>
+                </div>
+
+                <div>
+                    <input
+                        type="email"
+                        placeholder="Email *"
+                        class="input"
+                        name="email"
+                    />
+                    <span class="campo-obrigatorio"></span>
+                </div>
+
+                <div>
+                    <input
+                        type="number"
+                        placeholder="Telefone *"
+                        class="input"
+                        name="phone"
+                    />
+                    <span class="campo-obrigatorio"></span>
+                </div>
+                <div>
+                    <textarea
+                        name="message"
+                        id="inputField"
+                        cols="30"
+                        rows="10"
+                        placeholder="Mensagem *"
+                        class="input message"
+                        name="text"
+                    ></textarea>
+                    <span class="campo-obrigatorio"></span>
+                </div>
+                <p class="aviso">*campos obrigatórios</p>
+                <input
+                    type="submit"
+                    value="Enviar"
+                    class="btn-submit"
+                    target="_blank"
+                />
+            </form>
+        </main>
+
+        <script src="./src/js/index.js"></script>
+    </body>
+</html>
